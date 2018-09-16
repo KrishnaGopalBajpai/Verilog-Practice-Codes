@@ -1,3 +1,4 @@
+//this is level triggered.
 module traplatch (q,qbar,din,enable);
 input din,enable;
 output reg q; output wire qbar;
