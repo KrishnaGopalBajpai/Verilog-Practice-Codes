@@ -28,3 +28,18 @@ case (current_state)
     endcase
 end
 endmodule
+
+// new incomplete code .
+
+module xyz (input a,b,c,output reg f);
+    always@ (*)
+        if(a=1) f=a&b;
+endmodule
+
+//complete code wil give combilogic.
+
+module xyz (input a,b,c,output reg f);
+    always@ (*)
+        f=c;
+        if(a=1) f=a&b;
+endmodule
