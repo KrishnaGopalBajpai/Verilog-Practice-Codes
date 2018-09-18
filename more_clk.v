@@ -32,7 +32,7 @@ module multi_edge_clk (a,b,c,d,f, clk);
       c<=a+b;
    always@(negedge clk)
       f<=c-d;
-   enmdodule
+   endmodule
    
    //addition and subtraction can be completed in half of the clk in the above code.
    
