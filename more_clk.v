@@ -22,7 +22,7 @@ output reg f; reg t;
 endmodule
 
 
-//example of addition and subtraction on both the edge of clk.
+//example of addition and subtraction on both the edge of clk. 
 
 module multi_edge_clk (a,b,c,d,f, clk);
    input clk;
@@ -33,3 +33,6 @@ module multi_edge_clk (a,b,c,d,f, clk);
    always@(negedge clk)
       f<=c-d;
    enmdodule
+   
+   //addition and subtraction can be completed in half of the clk in the above code.
+   
