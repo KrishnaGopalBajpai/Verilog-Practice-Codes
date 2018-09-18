@@ -20,3 +20,16 @@ output reg f; reg t;
    always@(negedge clk)
     t<= a^b;
 endmodule
+
+
+//example of addition and subtraction on both the edge of clk.
+
+module multi_edge_clk (a,b,c,d,f, clk);
+   input clk;
+   input [7:0] a,b,c,d;
+   output [7:0] f;
+   always@(Posedge clk)
+      c<=a+b;
+   always@(negedge clk)
+      f<=c-d;
+   enmdodule
